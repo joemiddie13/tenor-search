@@ -23,7 +23,7 @@ app.set('views', './views');
 // // Require tenorjs near the top of the file
 // const Tenor = require("tenorjs").client({
 //   // Replace with your own key
-//   "Key": "AIzaSyCXEB-tv4IF4SGnpp4ydmvH5QKl6UOobBM", // https://tenor.com/developer/keyregistration
+//   "Key": "MY API KEY WOULD GO HERE", // https://tenor.com/developer/keyregistration
 //   "Filter": "high", // "off", "low", "medium", "high", not case sensitive
 //   "Locale": "en_US", // Your locale here, case-sensitivity depends on input
 // });
@@ -52,7 +52,7 @@ const https = require('https');
 app.get('/', (req, res) => {
   const term = req.query.term || '';
   const limit = 10;
-  const apiKey = 'AIzaSyCXEB-tv4IF4SGnpp4ydmvH5QKl6UOobBM';
+  const apiKey = 'MY API KEY WOULD GO HERE';
   const apiUrl = `https://tenor.googleapis.com/v2/search?q=${term}&key=${apiKey}&limit=${limit}`;
 
   https.get(apiUrl, (response) => {
